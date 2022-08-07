@@ -1,0 +1,20 @@
+{
+  "name": "awesome-books-app",
+  "version": "1.0.0",
+  "description": "This is a solo version of a booklist app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elfin-git/Awesome-Books-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elfin-git/Awesome-Books-App/issues"
+  },
+  "homepage": "https://github.com/elfin-git/Awesome-Books-App#readme"
+}
