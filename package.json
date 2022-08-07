@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/elfin-git/Awesome-Books-App/issues"
   },
-  "homepage": "https://github.com/elfin-git/Awesome-Books-App#readme"
+  "homepage": "https://github.com/elfin-git/Awesome-Books-App#readme",
+  "devDependencies": {
+    "hint": "^7.1.1"
+  }
 }
