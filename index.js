@@ -1,3 +1,5 @@
+import ds from './dataStructure.js';
+import * as variables from './variables.js';
 // Show date and time
 window.onload = () => {
   const date = new Date();
