@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/prefer-default-export */
 import UI from './user.js';
-import { Book } from './dynamic.js';
+import Book from './dynamic.js';
 
-class Library {
+export class Library {
   constructor() {
     this.collection = JSON.parse(localStorage.getItem('books')) || [];
     this.checkLength();
@@ -31,21 +33,23 @@ class Library {
   }
 }
 
-const library = new Library();
-UI.showBooks(library.collection);
-const title = document.getElementById('book-title');
-const author = document.getElementById('author');
-const form = document.querySelector('.form');
-const error = document.querySelector('.error');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (title.value === '' && author.value === '') {
-    error.innerHTML = 'Please fill in all the fields';
-    setTimeout(() => {
-      error.textContent = '';
-    }, 3000);
-  } else {
-    const newBook = new Book(title.value, author.value);
-    library.addBook(newBook);
-  }
-});
+export const library = new Library();
+
+export const formVal = () => {
+  const title = document.getElementById('book-title');
+  const author = document.getElementById('author');
+  const form = document.querySelector('.form');
+  const error = document.querySelector('.error');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (title.value === '' && author.value === '') {
+      error.innerHTML = 'Please fill in all the fields';
+      setTimeout(() => {
+        error.textContent = '';
+      }, 3000);
+    } else {
+      const newBook = new Book(title.value, author.value);
+      library.addBook(newBook);
+    }
+  });
+};
