@@ -1,35 +1,14 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/prefer-default-export */
-// Hide and display different pages //
-export const showPages = () => {
-  const homepage = document.querySelector('.home');
-  const addNew = document.querySelector('.add');
-  const contactpage = document.querySelector('.contact');
-  const homeSection = document.querySelector('#book-list');
-  const bookSection = document.querySelector('#Add-book');
-  const contactSection = document.querySelector('#contactUs');
-  const Clicked = false;
-
-  homepage.addEventListener('click', () => {
-    if (Clicked === false) {
-      homeSection.style.display = 'block';
-      bookSection.style.display = 'none';
-      contactSection.style.display = 'none';
-    }
-  });
-
-  addNew.addEventListener('click', () => {
-    if (Clicked === false) {
-      homeSection.style.display = 'none';
-      bookSection.style.display = 'block';
-      contactSection.style.display = 'none';
-    }
-  });
-
-  contactpage.addEventListener('click', () => {
-    if (Clicked === false) {
-      homeSection.style.display = 'none';
-      bookSection.style.display = 'none';
-      contactSection.style.display = 'block';
-    }
-  });
-};
+// variables getting html elements //
+export const title = document.getElementById('book-title');
+export const author = document.getElementById('author');
+export const form = document.querySelector('.form');
+export const error = document.querySelector('.error');
+export const homepage = document.querySelector('.home');
+export const addNew = document.querySelector('.add');
+export const contactpage = document.querySelector('.contact');
+export const homeSection = document.querySelector('#book-list');
+export const bookSection = document.querySelector('#Add-book');
+export const contactSection = document.querySelector('#contactUs');
+export const Clicked = false;

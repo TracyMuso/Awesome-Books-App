@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-
+import Book from './constructor.js';
 // UI class to handle all UI events
 export default class UI {
   static showBooks(collection) {

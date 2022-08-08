@@ -1,14 +1,49 @@
 /* eslint-disable no-unused-vars */
-import Book from './modules/dynamic.js';
-import { showPages } from './modules/pages.js';
-import * as lib from './modules/library.js';
-import { library } from './modules/library.js';
+import Book from './modules/constructor.js';
 import UI from './modules/user.js';
+import * as lib from './modules/library.js';
+import * as pages from './modules/pages.js';
 import { DateTime } from './modules/luxon.min.js';
 
-showPages();
-lib.formVal();
-UI.showBooks(library.collection);
+UI.showBooks(lib.library.collection);
+
+pages.homepage.addEventListener('click', () => {
+  if (pages.Clicked === false) {
+    pages.homeSection.style.display = 'block';
+    pages.bookSection.style.display = 'none';
+    pages.contactSection.style.display = 'none';
+  }
+});
+
+pages.addNew.addEventListener('click', () => {
+  if (pages.Clicked === false) {
+    pages.homeSection.style.display = 'none';
+    pages.bookSection.style.display = 'block';
+    pages.contactSection.style.display = 'none';
+  }
+});
+
+pages.contactpage.addEventListener('click', () => {
+  if (pages.Clicked === false) {
+    pages.homeSection.style.display = 'none';
+    pages.bookSection.style.display = 'none';
+    pages.contactSection.style.display = 'block';
+  }
+});
+
+pages.form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (pages.title.value === '' && pages.author.value === '') {
+    pages.error.innerHTML = 'Please fill in all the fields';
+    setTimeout(() => {
+      pages.error.textContent = '';
+    }, 3000);
+  } else {
+    const newBook = new Book(pages.title.value, pages.author.value);
+    lib.library.addBook(newBook);
+  }
+});
+
 // Show date and time
 function updateTime() {
   const date = DateTime.now();
@@ -17,7 +52,3 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 updateTime();
-
-window.onload = () => {
-
-};
