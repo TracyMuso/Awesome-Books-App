@@ -14,7 +14,26 @@
 
 ## Live Demo 
 
-[liveDemo](https://elfin-git.github.io/Awesome-Books-App/)
+[liveDemoLink](https://elfin-git.github.io/Awesome-Books-App/)
+
+## Getting Started
+
+**To get a local copy up and running follow these simple example steps.**
+
+# Prerequisites
+
+- Github flow knowledge. -Intermediate CSS, HTML and Javascript. -Installation of linter files. 
+
+# Setup 
+- To clone the repository run [https://github.com/elfin-git/Awesome-Books-App] in your terminal
+
+# Usage
+- This can be used as a simple booklist app to add and remove your favourite books
+- **NOTE**: The mobile version is currently unavailable.
+
+# Install
+- Set up Github Actions
+- Set up linter > Lighthouse , Webhint ,Stylelint , Eslint.
 
 ## Author
 
