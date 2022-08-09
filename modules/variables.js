@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable import/prefer-default-export */
-// variables getting html elements //
-export const title = document.getElementById('book-title');
-export const author = document.getElementById('author');
+
+export const title = document.getElementById('book-title').value;
+export const author = document.getElementById('author').value;
 export const form = document.querySelector('.form');
 export const error = document.querySelector('.error');
 export const homepage = document.querySelector('.home');

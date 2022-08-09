@@ -32,7 +32,7 @@ pages.contactpage.addEventListener('click', () => {
 
 pages.form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (pages.title.value === '' && pages.author.value === '') {
+  if (pages.title === '' && pages.author === '') {
     pages.error.innerHTML = 'Please fill in all the fields';
     setTimeout(() => {
       pages.error.textContent = '';
