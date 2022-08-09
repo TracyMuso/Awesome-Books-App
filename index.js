@@ -1,11 +1,10 @@
 /* eslint-disable no-unused-vars */
 import Book from './modules/constructor.js';
-import UI from './modules/user.js';
 import * as lib from './modules/library.js';
-import * as pages from './modules/pages.js';
+import * as pages from './modules/variables.js';
 import { DateTime } from './modules/luxon.min.js';
 
-UI.showBooks(lib.library.collection);
+lib.UI.showBooks(lib.library.collection);
 
 pages.homepage.addEventListener('click', () => {
   if (pages.Clicked === false) {
