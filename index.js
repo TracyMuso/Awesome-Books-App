@@ -31,8 +31,7 @@ pages.contactpage.addEventListener('click', () => {
 });
 
 pages.form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (pages.title === '' && pages.author === '') {
+  if (pages.title.value === '' && pages.author.value === '') {
     pages.error.innerHTML = 'Please fill in all the fields';
     setTimeout(() => {
       pages.error.textContent = '';
@@ -41,6 +40,7 @@ pages.form.addEventListener('submit', (e) => {
     const newBook = new Book(pages.title.value, pages.author.value);
     lib.library.addBook(newBook);
   }
+  e.preventDefault();
 });
 
 // Show date and time
