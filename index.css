@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: 'Comic Neue', cursive;
+  overflow-x: hidden;
+  margin: 0;
+  background: rgb(95, 218, 245);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(95, 218, 245, 1) 7%,
+      rgba(78, 156, 227, 1) 42%,
+      rgba(67, 65, 223, 1) 87%
+    );
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(26, 26, 110);
+}
+
+.logo {
+  text-decoration: none;
+  color: #c3c3c3;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0.3rem;
+  margin-left: 20px;
+}
+
+.date {
+  font-size: 15px;
+  color: rgb(16, 16, 16);
+  float: right;
+  margin-right: 2rem;
+  padding: 0.5rem;
+}
+
+#pages {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 15rem;
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #c3c3c3;
+}
+
+#pages li a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.add {
+  border-left: solid 1px #c8c4c4;
+  border-right: solid 1px #c8c4c4;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+#Add-book,
+#contactUs {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(241, 39, 39);
+}
+
+h2 {
+  font-weight: 400;
+  color: rgb(241, 39, 39);
+}
+
+form {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 1rem;
+  align-items: center;
+}
+
+form input {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  border: solid 2px rgb(67, 65, 65);
+}
+
+button:hover {
+  background-color: rgba(225, 218, 218, 0.5);
+}
+
+#btn {
+  padding: 0.5rem;
+  background-color: rgb(187, 185, 185);
+  float: right;
+  margin-right: 7%;
+  border-radius: 15%;
+}
+
+hr {
+  color: rgb(105, 102, 102);
+  width: 20%;
+}
+
+table {
+  width: 90%;
+  margin: 2rem auto;
+  border: solid 2px rgb(241, 162, 162);
+}
+
+tr {
+  padding: 0.3rem;
+  gap: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+td {
+  padding: 0.3rem;
+}
+
+tr:nth-child(even) {
+  background: #c8c4c4;
+}
+
+.remove {
+  background-color: rgb(187, 185, 185);
+  width: 5rem;
+  padding: 0.5rem;
+  float: right;
+  box-shadow: 5px 5px rgba(123, 120, 120, 0.8);
+  border: solid 1px rgb(45, 43, 43);
+  border-radius: 10%;
+}
+
+.empty {
+  text-align: center;
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+}
+
+#contact-info {
+  margin: 2rem auto;
+  width: 60%;
+  align-items: center;
+}
+
+#contact-info ul li {
+  padding: 0.3rem;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 13px;
+}
+
+section {
+  width: 100%;
+  padding: 2rem 0.5rem;
+}
+
+footer {
+  border-top: 1px solid #c8c4c4;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 5%;
+}

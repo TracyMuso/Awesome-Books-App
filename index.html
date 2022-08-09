@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <a href="#book-list" class="logo">Awesome Books</a>
+            <nav>
+                <ul id="pages">
+                    <li> <a class="home" href="#book-list">List</a> </li>
+                    <li> <a class="add" href="#Add-book">Add new</a> </li>
+                    <li> <a class="contact" href="#contactUs">Contact</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="date"></div>
+        <section id="book-list" >
+            <h1>All Awesome books</h1>
+            <h2 class="empty"></h2>
+            <div class="added-books">
+                <table class="table">
+                </table>
+            </div>
+            <hr>
+        </section>
+        <section id="Add-book" class="add-book">
+            <h1>Add a new book</h1>
+            <form class="form">
+                <span class="error"></span>
+                <label for="book-title"></label>
+                <input type="text" id="book-title" placeholder="Title" required><br><br>
+                <label for="author"></label>
+                <input type="text" id="author" placeholder="Author" required><br><br>
+                <button type="submit" class="btn" id="btn">Add</button>
+            </form>
+    
+        </section>
+        <section id="contactUs">
+            <h1>Contact Information</h1>
+            <div id="contact-info">
+                <p>Do you have any question or you just need to say "hello?"</p>
+                <h2>You can reach out to us!</h2>
+                <ul>
+                    <li>Our email awesomebooks@gmail.com</li>
+                    <li>Our phone number 0123456789</li>
+                    <li>Our address Street 12 city, Country.</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+           <p>Copyright ©2022 All rights reserved | This is a demo webpage and all contacts used are null and void.</p> 
+        </footer>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
