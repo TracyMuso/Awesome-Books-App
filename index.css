@@ -9,7 +9,11 @@ body {
   font-family: 'Comic Neue', cursive;
   overflow-x: hidden;
   margin: 0;
-  background-color: rgb(37, 239, 239);
+  background: rgb(95, 218, 245);
+  background: linear-gradient(90deg,
+    rgba(95, 218, 245, 1) 7%,
+    rgba(78, 156, 227, 1) 42%,
+    rgba(67, 65, 223, 1) 87%);
 }
 
 header {
@@ -66,7 +70,7 @@ a {
 
 #Add-book,
 #contactUs {
-  display: block;
+  display: none;
 }
 
 h1 {
@@ -104,6 +108,7 @@ button:hover {
   background-color: rgb(187, 185, 185);
   float: right;
   margin-right: 7%;
+  border-radius: 15%;
 }
 
 hr {
@@ -141,6 +146,7 @@ tr:nth-child(even) {
   float: right;
   box-shadow: 5px 5px rgba(123, 120, 120, 0.8);
   border: solid 1px rgb(45, 43, 43);
+  border-radius: 10%;
 }
 
 .empty {
