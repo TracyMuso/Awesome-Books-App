@@ -16,7 +16,7 @@
 
 [liveDemo](https://elfin-git.github.io/Awesome-Books-App/)
 
-## Authors
+## Author
 
 👤 **Tracy Musongole**
 

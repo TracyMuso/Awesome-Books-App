@@ -1,7 +1,6 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
-/* eslint-disable import/prefer-default-export */
 import Book from './constructor.js';
 
 export class UI {

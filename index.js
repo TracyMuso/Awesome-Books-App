@@ -44,10 +44,10 @@ pages.form.addEventListener('submit', (e) => {
 });
 
 // Show date and time
-function updateTime() {
+const updateTime = () => {
   const date = DateTime.now();
   const dateDiv = document.querySelector('.date');
   dateDiv.innerHTML = `${date.toLocaleString(DateTime.DATETIME_MED)}`;
-}
+};
 setInterval(updateTime, 1000);
 updateTime();
