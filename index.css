@@ -10,10 +10,13 @@ body {
   overflow-x: hidden;
   margin: 0;
   background: rgb(95, 218, 245);
-  background: linear-gradient(90deg,
-    rgba(95, 218, 245, 1) 7%,
-    rgba(78, 156, 227, 1) 42%,
-    rgba(67, 65, 223, 1) 87%);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(95, 218, 245, 1) 7%,
+      rgba(78, 156, 227, 1) 42%,
+      rgba(67, 65, 223, 1) 87%
+    );
 }
 
 header {
